@@ -114,7 +114,7 @@ export default class extends Phaser.Scene {
 
       console.log(bodyA);
 
-      if (bodyA.gameObject && (bodyA.gameObject.body.label === 'ground1' || bodyA.gameObject.body.label === 'ground2' || bodyA.gameObject.body.label === 'ground3')) {
+      if (bodyA.label === "Rectangle Body" || bodyA.gameObject && (bodyA.gameObject.body.label === 'ground1' || bodyA.gameObject.body.label === 'ground2' || bodyA.gameObject.body.label === 'ground3')) {
         this.showExplosion(bodyB.gameObject.x, bodyB.gameObject.y);
         bodyB.gameObject.destroy();
       }
