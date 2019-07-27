@@ -6,7 +6,7 @@ export default {
 
   init(callback){
 
-    this.socket = io('http://localhost:3000');
+    this.socket = io('https://tank-wars-elliot.herokuapp.com/');
 
     this.socket.emit('player added');
 
