@@ -24,6 +24,7 @@ export default class extends Phaser.Scene {
 
   update () {
     if (this.fontsReady) {
+      console.log('launch splash scene');
       this.scene.start('SplashScene')
     }
   }
