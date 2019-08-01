@@ -34,7 +34,15 @@ module.exports = {
         test: /\.js$/,
         use: ['babel-loader'],
         include: path.join(__dirname, 'src')
-      }
+      },
+      {
+        test: /\.(png|jpg|gif|eot|woff|woff2|ttf|svg)$/,
+        use: [
+          {
+            loader: 'url-loader'
+          },
+        ],
+      },
     ]
   },
   optimization: {
