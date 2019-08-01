@@ -6,8 +6,8 @@ export default class extends Phaser.Scene {
   }
 
   preload () {
-    this.load.image("splash", "../assets/images/start.png");
-    this.load.image("startBtn", "../assets/images/startBtn.png");
+    this.load.image("splash", "assets/images/start.png");
+    this.load.image("startBtn", "assets/images/startBtn.png");
   }
 
   create () {
