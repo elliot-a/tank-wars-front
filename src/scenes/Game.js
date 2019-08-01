@@ -44,7 +44,7 @@ export default class extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("background", "../assets/images/background_03.png");
+    this.load.image("background", "assets/images/background_03.png");
     this.load.image('tank1', 'assets/images/tank.png');
     this.load.image('tank2', 'assets/images/tank2.png');
     this.load.image('charge', 'assets/images/charge-bg.png');
@@ -57,7 +57,7 @@ export default class extends Phaser.Scene {
     this.load.image('tree_02', 'assets/images/tree_02.png');
     this.load.image('tree_03', 'assets/images/tree_03.png');
     this.load.image('bullet', 'assets/images/weapon_03_rocket.png');
-    this.load.image('restart', '../assets/images/restart.png');
+    this.load.image('restart', 'assets/images/restart.png');
     this.load.image('victory', 'assets/images/victory.png');
     this.load.image('defeat', 'assets/images/defeat.png');
     this.load.image('waiting', 'assets/images/defeat.png');
